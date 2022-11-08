@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone 12 Pro",
+      "desc": "Apple iPhone 12th generation",
+      "price": 999,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/jStCGe2Ny2z3M5wRZ9r1O7v3VJA7fUmOZBQE9CpMehs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9leG90/aXF1ZS5jb20ubXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MTIvQXBwbGUtaVBo/b25lLTEyLVByby1N/YXgtMTI4R0ItUGFj/aWZpYy1CbHVlLXNj/YWxlZC5qcGc"
+    },
+    {
+      "id": 2,
+      "name": "Galaxy S21",
+      "desc": "Samsung Galaxy S21 2021 edition",
+      "price": 899,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/JniP9304CErmDHeWVUyROT5R0ZO8aJXTyd9b7y8dj38/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5leHRyYS5jb20v/cy9hdXJvcmEvMTAw/MjMwMjY0XzgwMC9T/YW1zdW5nLUdhbGF4/eS1TMjEtUGx1cy01/Ry0yNTZHQi1QaGFu/dG9tLVNpbHZlcj9s/b2NhbGU9ZW4tR0Is/ZW4tKiwq"
+    },
+    {
+      "id": 3,
+      "name": "Galaxy S21 Ultra",
+      "desc": "Samsung Galaxy S21 Ultra 2021 edition",
+      "price": 1299,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/dUXSuXRvN26A0dHRYsULeKYEn5qJKxo0HcvI0CO4x4I/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9yYW5n/YXNob3BwaW5nLmxr/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxLzE2MTA5NzMx/MDlfSU1HXzE0NzM5/MjAuanBn"
+    },
+    {
+      "id": 4,
+      "name": "Pixel 5",
+      "desc": "Google pixel phone 5th generation",
+      "price": 699,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/oooqCGlb3CAjau-eNYNztP1wpHzE2gWGz2yz-Svo7xg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGVjaC13b25kZXJz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wMS9Hb29n/bGUtUGl4ZWwtNS01/Ry1BbmRyb2lkLVNt/YXJ0cGhvbmUuanBn"
+    },
+    {
+      "id": 5,
+      "name": "M1 Macbook Air",
+      "desc": "Apple Macbook air with apple sillicon",
+      "price": 1099,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/HJhg6UXYhyDC0gf1giNCT_izqtI2qUtuIKOJhxrGp6M/rs:fit:1200:996:1/g:ce/aHR0cHM6Ly9jZG4u/d2NjZnRlY2guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzExL00xLU1hY0Jv/b2stQWlyLTEuanBn"
+    },
+    {
+      "id": 6,
+      "name": "Playstation 5",
+      "desc": "Sony Playstation 5th generation",
+      "price": 500,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/Lsb20qg9XhyzmUwiNNjdLtHUrxfPOfcUW-4Qu8kx-xY/rs:fit:1200:936:1/g:ce/aHR0cHM6Ly9jZG4x/LnNtYXJ0cHJpeC5j/b20vcngtaVJiMVFq/NXpULXcxMjAwLWgx/MjAwL3NvbnktcGxh/eXN0YXRpb24tNS1w/LmpwZw"
+    },
+    {
+      "id": 7,
+      "name": "Airpods Pro",
+      "desc": "Apple airpods pro 1st generation",
+      "price": 200,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/kAsokYgMhdNf41ubaSG5MZHbzs5ZuFb9AouoFR1B63E/rs:fit:1200:698:1/g:ce/aHR0cHM6Ly9jZG4u/d2NjZnRlY2guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA4L2FpcnBvZHMt/cHJvLWRpc2NvdW50/ZWQuanBn"
+    },
+    {
+      "id": 8,
+      "name": "iPad Pro",
+      "desc": "Apple iPad Pro 2020 edition",
+      "price": 799,
+      "color": "#33505a",
+      "image": "https://imgs.search.brave.com/a1snFBMqrYmUKIwz1UECYYagwLNquCCNdrHqjVlzXJk/rs:fit:800:800:1/g:ce/aHR0cHM6Ly93d3cu/bXl0cmVuZHlwaG9u/ZS5ldS9pbWFnZXMv/aVBhZC1Qcm8tMTIt/OS0yMDE4LVdpLUZp/LTUxMkdCLVNwYWNl/LUdyZXktMDE5MDE5/ODgxODE3MS0wMTAy/MjAxOS0wNC1wLmpw/Zw"
+    }
+  ]
+}
