@@ -1,8 +1,11 @@
 import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_first_project/utils/myraouts.dart';
 import 'package:velocity_x/velocity_x.dart';
+
 import '../models/catalog.dart';
 import 'item_details_page.dart';
 
@@ -35,7 +38,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        backgroundColor: Colors.black87,
+        onPressed: () {
+          Navigator.pushNamed(context, MyRaouts.cartraouts);
+        },
         child: Icon(CupertinoIcons.cart),
       ),
       body: SafeArea(
@@ -52,9 +58,10 @@ class _HomePageState extends State<HomePage> {
                 CatlogList().expand()
               else
                 Expanded(
-                    child: const Center(
-                  child: CircularProgressIndicator(),
-                ))
+                  child: const Center(
+                    child: CircularProgressIndicator(),
+                  ),
+                )
             ],
           ),
         ),
@@ -139,6 +146,7 @@ class CatlogItem extends StatelessWidget {
                     .make(),
                 10.heightBox,
                 ButtonBar(
+                  buttonPadding: EdgeInsets.all(0),
                   alignment: MainAxisAlignment.spaceBetween,
                   children: [
                     "\$${item.price!}".text.color(Colors.black).make(),
@@ -148,7 +156,7 @@ class CatlogItem extends StatelessWidget {
                           backgroundColor:
                               MaterialStateProperty.all(Colors.black87),
                           shape: MaterialStateProperty.all(StadiumBorder())),
-                      child: "Buy".text.make(),
+                      child: "Add to cart".text.make(),
                     )
                   ],
                 )
