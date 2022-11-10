@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_first_project/models/cart_model.dart';
 import 'package:flutter_first_project/utils/myraouts.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -150,13 +151,8 @@ class CatlogItem extends StatelessWidget {
                   alignment: MainAxisAlignment.spaceBetween,
                   children: [
                     "\$${item.price!}".text.color(Colors.black).make(),
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.black87),
-                          shape: MaterialStateProperty.all(StadiumBorder())),
-                      child: "Add to cart".text.make(),
+                    _AddToCart(
+                      item: item,
                     )
                   ],
                 )
@@ -166,5 +162,51 @@ class CatlogItem extends StatelessWidget {
         ],
       ),
     ).white.rounded.square(150).make().py16();
+  }
+}
+
+class _AddToCart extends StatefulWidget {
+  final Item item;
+
+  _AddToCart({Key? key, required this.item}) : super(key: key);
+
+  @override
+  State<_AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<_AddToCart> {
+  final _cart = CartModel();
+  final _catalog = CatalogModel();
+  bool isAdded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    isAdded = _cart.items.contains(widget.item) ? true : false;
+    return ElevatedButton(
+      onPressed: () {
+        if (isAdded == false) {
+          setState(() {
+            isAdded = !isAdded;
+            _cart.catlog = _catalog;
+            _cart.add(widget.item);
+          });
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: "Product Alredy added".text.make(),
+            ),
+          );
+        }
+      },
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(Colors.black87),
+        shape: MaterialStateProperty.all(
+          StadiumBorder(),
+        ),
+      ),
+      child: isAdded
+          ? Icon(CupertinoIcons.cart_badge_plus)
+          : "Add to cart".text.make(),
+    );
   }
 }
